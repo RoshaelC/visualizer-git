@@ -45,9 +45,16 @@ qplot(x = height_cm, y = leafwidth_mm, data = MyData[1:7,], size = leaflength_cm
 ## to make the graph look as clean (no unnecessary lines or shading) . Try to reproduce a clean but 
 ## eye-catching figure that you might see in a journal like Nature or Science.
 
+MyData2 <- read.csv("Traits _wo_uniques.csv")
 
-
-
+ggplot(MyData2) +
+  geom_point(aes(x = height_cm, y = leaflength_cm, size = canopy_m2, colour = genus)) +
+  scale_x_continuous(name = "Shrub Height (cm)") +
+  scale_y_continuous(name = "Srub Leaf Length (cm)") +
+  scale_size_continuous(name = expression(paste('Shrub Canopy (', m^2, ')'))) +
+  scale_colour_discrete(name = "Shrub Genus") +
+  theme_classic()
+  
 
 
 
