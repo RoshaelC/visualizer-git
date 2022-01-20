@@ -38,6 +38,7 @@ qplot(x = genus, y = height_cm, data = MyData[1:7,], geom = "boxplot")
 # Question 4 ----------------------------------------------------------------------------------
 ## A bivariate plot of two continuous variables, colour-coded for 2 or more groups and scaled in 
 ## size based on a third continous variable 
+qplot(x = height_cm, y = leafwidth_mm, data = MyData[1:7,], size = leaflength_cm, colour = genus)
 
 # Question 5 ----------------------------------------------------------------------------------
 ## One graph of your choice, of any type, using any data. Create this using ggplot() with parameters 
