@@ -18,8 +18,32 @@
 # studied shrubs and subshrubs.
 
 MyData <- read.csv("./Traits.csv")
+library(ggplot2)
+str(MyData)
 
-# frequency distribution of a single continuous variable --------------------------------------
+
+# Question 1 ----------------------------------------------------------------------------------
+## A frequency distribution of a single continuous variable
+
+
+# Question 2 ----------------------------------------------------------------------------------
+## A bivariate plot of two continuous variables
+
+
+# Question 3 ----------------------------------------------------------------------------------
+## A boxplot of a continuous variable measured in 2 or more groups
+
+# Question 4 ----------------------------------------------------------------------------------
+## A bivariate plot of two continuous variables, colour-coded for 2 or more groups and scaled in 
+## size based on a third continous variable 
+
+# Question 5 ----------------------------------------------------------------------------------
+## One graph of your choice, of any type, using any data. Create this using ggplot() with parameters 
+## to make the graph look as clean (no unnecessary lines or shading) . Try to reproduce a clean but 
+## eye-catching figure that you might see in a journal like Nature or Science.
+
+
+
 
 
 
