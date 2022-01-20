@@ -17,7 +17,7 @@
 # phylogenetic signals of the height(cm), canopy (m2), leaf length (cm) and leaf width (mm) of 
 # studied shrubs and subshrubs.
 
-MyData <- read.csv("./Traits.csv")
+MyData <- read.csv("./Traits.csv", header = T)
 library(ggplot2)
 str(MyData)
 
@@ -31,6 +31,9 @@ qplot(x = height_cm, y = leafwidth_mm, data = MyData)
 
 # Question 3 ----------------------------------------------------------------------------------
 ## A boxplot of a continuous variable measured in 2 or more groups
+### this dataset has many rows, so for the purposes of this question, I will be using only the first
+### 7 rows
+qplot(x = genus, y = height_cm, data = MyData[1:7,], geom = "boxplot")
 
 # Question 4 ----------------------------------------------------------------------------------
 ## A bivariate plot of two continuous variables, colour-coded for 2 or more groups and scaled in 
