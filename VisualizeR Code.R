@@ -24,7 +24,7 @@ str(MyData)
 
 # Question 1 ----------------------------------------------------------------------------------
 ## A frequency distribution of a single continuous variable
-
+qplot(x = height_cm, data = MyData, binwidth = 5)
 
 # Question 2 ----------------------------------------------------------------------------------
 ## A bivariate plot of two continuous variables
