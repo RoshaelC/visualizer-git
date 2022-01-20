@@ -17,7 +17,9 @@
 # phylogenetic signals of the height(cm), canopy (m2), leaf length (cm) and leaf width (mm) of 
 # studied shrubs and subshrubs.
 
+MyData <- read.csv("./Traits.csv")
 
+# frequency distribution of a single continuous variable --------------------------------------
 
 
 
