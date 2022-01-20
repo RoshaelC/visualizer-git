@@ -47,21 +47,18 @@ qplot(x = height_cm, y = leafwidth_mm, data = MyData[1:7,], size = leaflength_cm
 
 MyData2 <- read.csv("Traits _wo_uniques.csv")
 
-ggplot(MyData2) +
-  geom_point(aes(x = height_cm, y = leaflength_cm, size = canopy_m2, colour = genus)) +
+mytheme <- theme(axis.line = element_line(colour = "black"),
+                axis.ticks = element_line(colour = "black"),
+                legend.background = element_blank(),
+                legend.key = element_blank(),
+                panel.background = element_rect(fill = "white"),
+                panel.border = element_rect(colour = "black", fill=NA, size=1))
+  
+ggplot(MyData) +
+  geom_point(aes(x = height_cm, y = leaflength_cm), size = 3, alpha = 0.7) +
+  geom_smooth(aes(x = height_cm, y = leaflength_cm), method = "lm", se = FALSE, colour = "red") +
   scale_x_continuous(name = "Shrub Height (cm)") +
   scale_y_continuous(name = "Srub Leaf Length (cm)") +
-  scale_size_continuous(name = expression(paste('Shrub Canopy (', m^2, ')'))) +
-  scale_colour_discrete(name = "Shrub Genus") +
-  theme_classic()
-  
-
-
-
-
-
-
-
-
+  mytheme
 
 
