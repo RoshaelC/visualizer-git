@@ -55,7 +55,7 @@ mytheme <- theme(axis.line = element_line(colour = "black"),
                 panel.border = element_rect(colour = "black", fill=NA, size=1))
   
 ggplot(MyData) +
-  geom_point(aes(x = height_cm, y = leaflength_cm), size = 3, alpha = 0.7) +
+  geom_point(aes(x = height_cm, y = leaflength_cm), size = 3, alpha = 0.5) +
   geom_smooth(aes(x = height_cm, y = leaflength_cm), method = "lm", se = FALSE, colour = "red") +
   scale_x_continuous(name = "Shrub Height (cm)") +
   scale_y_continuous(name = "Srub Leaf Length (cm)") +
