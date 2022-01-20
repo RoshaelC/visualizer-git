@@ -45,8 +45,6 @@ qplot(x = height_cm, y = leafwidth_mm, data = MyData[1:7,], size = leaflength_cm
 ## to make the graph look as clean (no unnecessary lines or shading) . Try to reproduce a clean but 
 ## eye-catching figure that you might see in a journal like Nature or Science.
 
-MyData2 <- read.csv("Traits _wo_uniques.csv")
-
 mytheme <- theme(axis.line = element_line(colour = "black"),
                 axis.ticks = element_line(colour = "black"),
                 legend.background = element_blank(),
